@@ -3,7 +3,7 @@ import path from 'path';
 import ReactMardown from 'markdown-to-jsx';
 import matter from 'gray-matter';
 import { useRouter } from 'next/router';
-import { GetStaticProps, GetStaticPropsContext } from 'next';
+import { GetStaticPropsContext } from 'next';
 
 type BlogPostProps = {
   post: { content: string; data: { title: string; date: string } };

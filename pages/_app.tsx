@@ -1,9 +1,6 @@
-import { GetStaticProps } from 'next';
 import type { AppProps } from 'next/app';
 import Header from '../components/Header';
 import '../styles/globals.css';
-import { Social } from '../typings';
-import { fetchSocials } from '../utils/fetchSocials';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

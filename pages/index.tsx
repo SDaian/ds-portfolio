@@ -1,25 +1,19 @@
-import type { GetStaticProps, NextPage } from 'next';
+import type { GetStaticProps } from 'next';
 import Head from 'next/head';
 
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Hero from '../components/Hero';
 import Projects from '../components/Projects';
-import Skills from '../components/Skills';
 import WorkExperience from '../components/WorkExperience';
-import { Experience, PageInfo, Social } from '../typings';
-import { fetchExperiences } from '../utils/fetchExperiences';
+import { PageInfo } from '../typings';
 import { fetchPageInfo } from '../utils/fetchPageInfo';
-import { fetchSocials } from '../utils/fetchSocials';
 
 interface Props {
   pageInfo: PageInfo,
-  experiences: Experience[],
 }
 
-const Home = ({ pageInfo, experiences }: Props) => {
-
-  console.log(experiences);
+const Home = ({ pageInfo }: Props) => {
 
   return (
     <>
@@ -60,10 +54,8 @@ export default Home;
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
   const pageInfo: PageInfo = await fetchPageInfo();
-  const experiences: Experience[] =  await fetchExperiences();
   return {
     props: {
-      experiences,
       pageInfo,
     },
   };
