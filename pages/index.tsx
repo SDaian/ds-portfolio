@@ -52,7 +52,7 @@ const Home = ({ pageInfo }: Props) => {
 
 export default Home;
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
+export const getStaticProps = async () => {
   const pageInfo: PageInfo = await fetchPageInfo();
   return {
     props: {
