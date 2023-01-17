@@ -35,8 +35,8 @@ const Contact = ({ pageInfo }: ContactProps) => {
       <div className='flex flex-col space-y-5'>
         <h4 className='text-2xl font-semibold text-center'>
           I have got just what you need.{' '}
-          <span className='block underline decoration-[#F7AB04]'>
-            Let&apos;s talk
+          <span className='md:block underline decoration-[#F7AB04]'>
+            Let&apos;s talk.
           </span>
         </h4>
 

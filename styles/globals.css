@@ -8,20 +8,20 @@
   }
 
   .navLink {
-    @apply text-[#fafafa]
+    @apply text-[#fafafa];
   }
 
   .navButton {
-    @apply px-6 py-2 rounded-full uppercase text-xs tracking-widest text-[#fafafa] transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]
+    @apply px-6 py-2 rounded-full uppercase text-xs tracking-widest text-[#fafafa] transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A];
   }
 
   .heroButton {
-    @apply m-3 md:m-0 px-6 py-2 border text-[#F7AB0A] border-[#F7AB0A] rounded-full uppercase text-xs tracking-widest transition-all hover:border-[#F7AB0A]/40 hover:text-[#F7AB0A]/40
+    @apply m-2 md:m-0 px-6 py-2 border text-[#F7AB0A] border-[#F7AB0A] rounded-full uppercase text-xs tracking-widest transition-all  hover:text-white hover:bg-[#F7AB04]/80;
   }
 
   .contactInput {
     @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#242424] text-[#fafafa] placeholder-gray-500 transition-all
-      focus:border-[#F7AB0A]/40 focus:text-[#fafafa] hover:border-[#F7AB0A]/40
+      focus:border-[#F7AB0A]/40 focus:text-[#fafafa] hover:border-[#F7AB0A]/40;
   }
 
   .contactIcon {
@@ -38,5 +38,15 @@
 
   .contactButton {
     @apply transition duration-150 bg-transparent border border-[#F7AB0A] hover:text-white hover:bg-[#F7AB04]/80 py-5 px-10 rounded text-[#F7AB0A] font-semibold;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* For IE, Edge and Firefox */
+  .scrollbar-hide {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
   }
 }

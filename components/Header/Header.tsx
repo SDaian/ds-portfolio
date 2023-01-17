@@ -55,7 +55,7 @@ const Header = () => {
             bgColor='transparent'
             fgColor='#fafafa'
           />
-          <p className='hidden md:inline-flex font-bold text-sm navLink'>
+          <p className='hidden uppercase md:inline-flex font-bold text-sm navLink'>
             Get In Touch
           </p>
         </motion.div>
